@@ -30,7 +30,18 @@ return [
      * nl-NL, pl-PL, pt-BR, pt-PT, ro-RO, ru-RU, sv-SE, tr-TR
      */
     'language' => env('TTS_LANGUAGE', 'en-US'),
-
+    
+    
+     /**
+     * The default engine to be used.
+     *
+     * You may use any of the following:
+     *
+     * standard, neural
+     */
+    'engine' => env('TTS_ENGINE', 'standard'),
+    
+ 
     'audio' => [
         /**
          * Default path to store the output file.
