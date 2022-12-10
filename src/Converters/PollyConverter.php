@@ -215,7 +215,8 @@ class PollyConverter implements Converter
      */
     protected function engine($options)
     {
-        return Arr::get($options, 'engine', 'standard');
+        $changeEngine = config('tts.engine', 'standard');
+        return Arr::get($options, 'engine',  $changeEngine);
     }
 
     /**
